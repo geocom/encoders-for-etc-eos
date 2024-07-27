@@ -22,3 +22,5 @@ Hardware/*.ses
 
 # VS Code settings.
 Firmware/.vsteensy/build/
+
+Hardware/EncoderBoard-backups/*

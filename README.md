@@ -1,3 +1,17 @@
+# Work in Progress
+This fork is doing the following;
+Done but untested
+   - Changing PCB design to use standard Gateron keys instead of the very costly buttons on older versions.
+   - Flips teensy to be under mounted as the top mounted has some design trade off's due to the switch change this is also a functional requirement due to the components under the teensy 4.0's pcb that were not there on teensy 3.2's. Leaving it on top would have resulted in a height change on the front. Given that 3D printing is cheap and commonplace and bottom mounting can allow for better integration options and lets you use headers so you can quickly repair the device.
+   - Change teensy 3.2(discontinued) pin mapping to be teensy 4.0 compatible (most of this has been done by dropping the buttons)
+   - Adds symbols for similar resistors and caps making it easier to solder
+Semi done
+   - Software rewrite has been done and will be in a separate repo once board tested(this is a complete rewrite using arduino and more generic packages, the build in this repo is locked to teensy 3.2) it needs modifications based on this board as current testing has been done on a bodged(to work with teensy 4.0) rev b board without the extra WS2812(on the rev c board) for the keys so needs a bit more rewriting
+To Do
+   - 3D files mid board and mounting plate to do
+   - Fully validate PCB by ordering and making
+
+
 # Encoders for ETC Eos
 
 A 9-encoder (un-official) add on to the [ETC Eos][etceos] Family of Lighting Consoles and Software, using OSC over USB.
